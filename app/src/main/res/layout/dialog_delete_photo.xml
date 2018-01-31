@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="345dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_out"
+    >
+    <LinearLayout
+        android:background="@drawable/rect_6_radius"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="101dp">
+        <TextView
+            android:id="@+id/tv_delete"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#999"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="确定要删除这张照片吗？"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv_woman"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#d15402"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="删除"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancle"
+        android:background="@drawable/rect_6_radius"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#333"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="取消"/>
+</LinearLayout>

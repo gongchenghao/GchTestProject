@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gcg.testproject.activity.contactlist.ContactListActivity">
+
+    <ListView
+        android:dividerHeight="@dimen/dp0"
+        android:divider="#ffffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/listview"/>
+
+    <gcg.testproject.activity.contactlist.contact.SideBarView
+        android:id="@+id/sidebarview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:text="A"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:background="@drawable/item_tip_bg"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

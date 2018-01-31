@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:round="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="gcg.testproject.activity.progressbar.ProgressBarActivity">
+    <!--掌一眼圆形进度条-->
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp50"
+        android:gravity="center"
+        android:layout_width="205dp"
+        android:layout_height="205dp">
+        <gcg.testproject.activity.progressbar.RoundprogressBar2
+            android:id="@+id/roundProgressBar"
+            android:layout_width="205dp"
+            android:layout_height="205dp"
+            round:radius="97dp"
+            round:ringWidth="3dp"
+            round:startAngle="-90"
+            round:centerColor="#ffffff"
+            round:ringColor="#000"
+            round:progressColor1="#D15402"
+            round:isTextDisplay="false"/>
+        <TextView
+            android:gravity="center"
+            android:textColor="#D15402"
+            android:textSize="20sp"
+            android:text=""
+            android:id="@+id/tv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/dp50"
+        android:id="@+id/progress_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/progressbg"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        />
+    <ProgressBar
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/dp50"
+        android:id="@+id/progress_bar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/progressbg1"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        />
+</LinearLayout>

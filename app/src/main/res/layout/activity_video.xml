@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context=".activity.SelectVideo.VideoPlayActivity">
+    <include layout="@layout/head_all1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <SurfaceView
+                android:id="@+id/su"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+            <TextView
+                android:id="@+id/tv_zan_ting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:text="暂停"/>
+
+            <TextView
+                android:id="@+id/tv_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:text="00:00"/>
+
+            <gcg.testproject.widget.VideoPlayProgressBar
+                android:layout_marginTop="@dimen/dp1"
+                android:id="@+id/progress"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="10dp"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="10dp"
+                android:textColor="#fff"
+                android:text="00:00"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

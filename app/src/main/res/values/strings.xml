@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">测试项目</string>
+    <string name="scan_code">Scan code</string>
+    <string name="unable_to_open_camera">Unable to open camera, please check it and try again later.</string>
+    <string name="error">Error</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

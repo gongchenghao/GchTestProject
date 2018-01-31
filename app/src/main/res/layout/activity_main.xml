@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/draw"
+    tools:context="gcg.testproject.activity.MainActivity">
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/top_layout"/>
+        <gcg.testproject.widget.NoScrollViewPager
+            android:id="@+id/v_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e8"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50">
+            <LinearLayout
+                android:id="@+id/ll_tab_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/sel_service"
+                    android:id="@+id/imageView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:duplicateParentState="true"
+                    android:text="第一页"
+                    android:textColor="@drawable/sel_text_color"
+                    android:textSize="11sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_tab_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/sel_dingdan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:duplicateParentState="true"
+                    android:text="第二页"
+                    android:textColor="@drawable/sel_text_color"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tab_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_above="@+id/tv_mg"
+                    android:layout_centerHorizontal="true"
+                    android:duplicateParentState="true"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/sel_message" />
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingBottom="5dp"
+                    android:text="第三页"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@drawable/sel_text_color"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tab_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:duplicateParentState="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_above="@+id/tv_mg"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/imgview"
+                        android:duplicateParentState="true"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:src="@drawable/sel_me" />
+
+                    <TextView
+                        android:id="@+id/ag_msgcount"
+                        android:visibility="visible"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_toRightOf="@+id/imgview"
+                        android:layout_alignTop="@+id/imgview"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="-10dp"
+                        android:background="@drawable/red_circle"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="8dp" />
+
+                    <TextView
+                        android:id="@+id/tv_mg"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:paddingBottom="5dp"
+                        android:text="第四页"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@drawable/sel_text_color"
+                        android:textSize="11sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 左侧滑动菜单 -->
+    <RelativeLayout
+        android:background="#4caf65"
+        android:id="@+id/main_left_drawer_layout"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:layout_gravity="start">
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是左侧菜单"/>
+    </RelativeLayout>
+
+    <!-- 右侧滑动菜单 -->
+    <RelativeLayout
+        android:gravity="center"
+        android:background="#4caf65"
+        android:id="@+id/main_right_drawer_layout"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true"
+        >
+        <TextView
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是右侧菜单"/>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

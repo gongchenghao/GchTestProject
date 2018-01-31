@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_select_photo"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="选择图片" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_select_video"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="选择视频" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_banner"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="轮播图" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_date"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="日期选择器1" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_date2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="日期选择器2" />
+
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_contect"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="联系人列表" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_progress_dialog"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="加载框" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_select_dialog"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="功能选择框" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_popwindow"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="仿微信右上角弹框" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_round_progressbar"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="圆形进度条" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_ratingbar"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="ratingbar" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_update"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="自动更新" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_sanji"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="省市区三级联动" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_erweima"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="扫描二维码" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_pay"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="微信支付和支付宝支付" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_refresh_loadmore"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="下拉刷新和上拉加载" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_listview_delete"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="listview条目整体侧滑删除" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_listview_delete2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="listview条目单个侧滑删除" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_list_count_down"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="列表倒计时" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_relogin_dialog"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="异地登陆提示框" />
+            <TextView
+                android:background="#4caf65"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:id="@+id/tv_location"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="定位" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

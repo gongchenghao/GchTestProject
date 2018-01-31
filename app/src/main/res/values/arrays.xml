@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="data">
+        <item>阿松</item>
+        <item>阿嗄</item>
+        <item>陈达哥</item>
+        <item>沉积电</item>
+        <item>嗲嗲地</item>
+        <item>凤飞飞</item>
+        <item>高规格</item>
+        <item>高高的</item>
+        <item>嘿嘿嘿</item>
+        <item>黑客</item>
+        <item>看看打</item>
+        <item>卡了得</item>
+        <item>张丹丹</item>
+        <item>丫的你</item>
+        <item>彼得森</item>
+        <item>的接口</item>
+        <item>王尼玛</item>
+        <item>王蜜桃</item>
+        <item>saber</item>
+        <item>archer</item>
+        <item>lancer</item>
+        <item>rider</item>
+        <item>Caster</item>
+        <item>Assassin</item>
+        <item>Berserker</item>
+        <item>Avenger</item>
+        <item>#78890</item>
+        <item>$123</item>
+        <item>~jdksjdk</item>
+        <item>!酒店快捷</item>
+        <item>火影忍者</item>
+        <item>海贼王</item>
+        <item>死神</item>
+        <item>全职猎人</item>
+        <item>龙珠</item>
+        <item>京阿尼</item>
+        <item>PAWORKS</item>
+        <item>节操社</item>
+        <item>英雄联盟</item>
+        <item>炉石传说</item>
+        <item>剑灵</item>
+        <item>暴走大事件</item>
+
+    </string-array>
+
+    <string-array name="head">
+        <item>新的朋友</item>
+        <item>群聊</item>
+        <item>标签</item>
+        <item>公众号</item>
+    </string-array>
+
+    <declare-styleable name="SlideMode">
+        <attr name="mode">
+            <enum name="forbid" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

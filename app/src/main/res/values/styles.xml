@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 顶部条容器 -->
+    <style name="head_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">#073290</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!-- 左边按钮 -->
+    <style name="head_left_btn">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">#073290</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/icon_arrow_left_white</item>
+    </style>
+
+    <!-- 中间文字 -->
+    <style name="head_middle_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTheme.Blue" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/theme_blue</item>
+    </style>
+
+    <!--仿照微信右上角弹框的动画效果-->
+    <style name="AnimTools" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_in</item>
+        <item name="android:windowExitAnimation">@anim/push_out</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_rating_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <!--
+       RatingBar用来产生评分数据
+   numStars总分
+   rating评分
+   isIndicator 不可编辑
+   android:rating="2" 显示的星级
+       -->
+    <RatingBar
+        android:layout_marginTop="@dimen/dp50"
+        android:id="@+id/ratingbar"
+        style="@android:style/Widget.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressDrawable="@drawable/ratingbar_full"
+        android:rating="2"
+         />
+
+
+    <!--MyRatingBar属性设置代码是使用的关键 对星星数量，大小，位置，星星样式，间距，默认星级等均做了设置-->
+    <gcg.testproject.widget.MyRatingBar
+        android:id="@+id/star"
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        app:starCount="5"
+        app:starEmpty="@drawable/rating_small_empty"
+        app:starFill="@drawable/rating_small_full"
+        app:starHalf="@drawable/rating_small_half"
+        app:starImageSize="35dp"
+        app:starPadding="1dp"
+        app:starStep="2.5"
+        android:clickable="true"
+        app:stepSize="Half"/>
+
+</LinearLayout>

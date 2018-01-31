@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_phone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingRight="@dimen/dp10"
+    tools:context="gcg.testproject.activity.selectphoto.SelectPhotoActivity">
+    <GridView
+        android:layout_marginTop="@dimen/dp10"
+        android:numColumns="3"
+        android:id="@+id/gv_pics"
+        android:horizontalSpacing="@dimen/dp10"
+        android:verticalSpacing="@dimen/dp10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </GridView>
+</LinearLayout>

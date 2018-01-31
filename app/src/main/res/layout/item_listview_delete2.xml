@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingRight="-90dp"
+    android:paddingTop="10dp"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:layout_weight="0.35"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/rating_small_full" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="$128.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:layout_weight="0.65"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="HP 14-P010NR 14 TOUCHSCREEN SLATEBOOK, NIVIDIA TE"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDelete"
+        android:layout_width="90dp"
+        android:layout_height="96dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="-5dp"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center"
+        android:text="Delete"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

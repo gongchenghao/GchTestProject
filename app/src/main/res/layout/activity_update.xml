@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="gcg.testproject.activity.update.UpdateActivity">
+    <TextView
+        android:id="@+id/tv_current"
+        android:gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="当前版本"/>
+    <TextView
+        android:id="@+id/tv_lastest"
+        android:gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="最新版本"/>
+</LinearLayout>

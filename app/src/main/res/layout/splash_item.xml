@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rv_parent"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    >
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳过"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="#fff"
+        android:background="@drawable/rect_alpha_skip"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_tiyan"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:text="立即体验"
+        android:textColor="#fff"
+        android:background="@drawable/rect_d15402_100"
+        android:textSize="18sp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

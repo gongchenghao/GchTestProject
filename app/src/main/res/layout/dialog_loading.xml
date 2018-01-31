@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/rect_10_radius"
+    android:orientation="vertical"
+    android:layout_width="120dp"
+    android:layout_height="120dp">
+
+    <FrameLayout
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="45dp"
+        android:layout_height="45dp">
+
+        <!--timg是最后显示的对号图片-->
+        <ImageView
+            android:src="@mipmap/zh_yes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--遮盖住对号的一层布-->
+        <ImageView
+            android:id="@+id/iv_place"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--indeterminateDuration 这个属性控制progressbar 转圈的速率-->
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/pb"
+            style="?android:progressBarStyleInverse"
+            android:indeterminateDuration="2500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_msg"
+        android:textSize="12sp"
+        android:textColor="#5a5a5a"
+        android:text="加载中..."
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

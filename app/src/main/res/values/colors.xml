@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="divider">#eeeeee</color>
+    <color name="toast_color">#c5000000</color>
+
+    <color name="main_service_normal">#f39800</color>
+    <color name="font_1">#3e3a39</color>
+    <color name="font_2">#727171</color>
+    <color name="font_3">#b5b5b6</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="font_blue_normal">#073290</color>
+
+    <color name="normal" >#eae8e8</color>
+    <color name="press" >#bcb2b2</color>
+    <color name="theme_blue">#008df9</color>
+</resources>

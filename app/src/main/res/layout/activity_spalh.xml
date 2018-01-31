@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_spalh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashAndGuide.SplashActivity">
+    <ImageView
+        android:id="@+id/iv_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/splash2"
+       />
+    <TextView
+        android:id="@+id/tv_time"
+        android:gravity="center"
+        android:background="@drawable/rect_alpha"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="跳过5"
+        android:textColor="#ffffff"
+        android:layout_marginRight="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

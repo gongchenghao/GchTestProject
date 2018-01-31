@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.selectphoto.DaTuActivity">
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="#29292c">
+        <TextView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <!--返回按钮-->
+        <LinearLayout
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:id="@+id/fanhui"
+            android:orientation="horizontal"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="14dp"
+                android:src="@mipmap/fanhuijiantou" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:id="@+id/tuikuan"
+            android:orientation="horizontal"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="14dp"
+                android:text="退款"
+                android:textColor="#fff"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="14dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="登录"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+        <ImageButton
+            android:background="@null"
+            android:visibility="gone"
+            android:id="@+id/ib_more"
+            android:layout_alignParentRight="true"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_shanchu"
+            />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/v_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

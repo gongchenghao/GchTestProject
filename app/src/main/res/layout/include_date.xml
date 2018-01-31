@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/include_date_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textColor="#073290"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1.0"
+            android:textColor="#3e3a39"
+            android:text="日" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#3e3a39"
+            android:layout_weight="1.0"
+            android:text="一" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1.0"
+            android:textColor="#3e3a39"
+            android:text="二" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#3e3a39"
+            android:layout_weight="1.0"
+            android:text="三" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3e3a39"
+            android:gravity="center"
+            android:layout_weight="1.0"
+            android:text="四" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3e3a39"
+            android:gravity="center"
+            android:layout_weight="1.0"
+            android:text="五" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3e3a39"
+            android:gravity="center"
+            android:layout_weight="1.0"
+            android:text="六" />
+
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"/>
+    
+    <gcg.testproject.activity.selectdate2.date.CustomGridView
+        android:id="@+id/include_date_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff"
+        android:verticalSpacing="2dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="7"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="gcg.testproject.activity.alipay.PayActivity">
+    <TextView
+        android:id="@+id/tv_weixin"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp50"
+        android:text="微信支付"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="#4caf65"/>
+    <TextView
+        android:layout_marginTop="@dimen/dp50"
+        android:id="@+id/tv_zhifubao"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp50"
+        android:text="支付宝支付"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="#4caf65"/>
+</LinearLayout>

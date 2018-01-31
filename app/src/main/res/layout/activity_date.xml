@@ -1,0 +1,46 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    
+        <RelativeLayout
+        style="@style/head_container">
+        
+        <ImageView
+            android:id="@+id/date_head_back"
+            style="@style/head_left_btn"/>
+        
+        <TextView
+            style="@style/head_middle_title"
+            android:text="选择入住退房日期"/>
+    </RelativeLayout>
+    
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include 
+                android:id="@+id/date_include1"
+                layout="@layout/include_date" />
+
+            <include 
+                android:id="@+id/date_include2"
+                layout="@layout/include_date" />
+
+            <include 
+                android:id="@+id/date_include3"
+                layout="@layout/include_date" 
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

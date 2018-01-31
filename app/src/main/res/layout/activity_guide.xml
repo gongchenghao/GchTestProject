@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_guide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashAndGuide.GuideActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vg_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:id="@+id/indicater_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        >
+    </LinearLayout>
+</RelativeLayout>

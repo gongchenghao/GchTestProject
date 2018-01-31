@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="gcg.testproject.activity.sanji.SanJiActivity">
+    <TextView
+        android:background="#4caf65"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="@dimen/dp50"
+        android:id="@+id/tv_sanji1"
+        android:text="第一种三级联动"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:textColor="#ffffff"
+        android:background="#4caf65"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp50"
+        android:id="@+id/tv_sanji2"
+        android:text="修改后的三级联动"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+</LinearLayout>

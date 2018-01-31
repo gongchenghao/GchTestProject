@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:paddingLeft="15dp"
+        android:paddingRight="@dimen/dp15"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <View
+            android:background="#3f3f3f"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="@dimen/dp1"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginLeft="@dimen/dp15"
+            android:id="@+id/pull_to_refresh_loadmore_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:text="我也是有底线的"
+            android:textColor="#3f3f3f"
+            android:textSize="14sp"
+             />
+        <View
+            android:background="#3f3f3f"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="@dimen/dp1"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

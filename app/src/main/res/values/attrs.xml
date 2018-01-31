@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--仿微信进度条需要用到的属性-->
+    <declare-styleable name="MyVideoPlayProgressBar">
+        <!--已播放进度的颜色-->
+        <attr name="progressColor" format="color"></attr>
+        <!--未播放区域的颜色-->
+        <attr name="unprogressColor" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="SideBarView">
+        <attr name="sidebar_nor_background" format="color"/>
+        <attr name="sidebar_press_background" format="color"/>
+        <attr name="sidebar_text_size" format="dimension"/>
+        <attr name="sidebar_text_color_nor" format="color"/>
+        <attr name="sidebar_text_color_press" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" format="dimension">
+
+        </attr>
+        <attr name="type">
+            <enum name="circle" value="0"/>
+            <enum name="round" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar2">
+        <attr name="startAngle" format="integer"></attr>
+        <attr name="radius" format="dimension"></attr>
+        <attr name="ringWidth" format="dimension"></attr>
+        <attr name="centerColor" format="color"></attr>
+        <attr name="ringColor" format="color"></attr>
+        <attr name="progressColor1" format="color"></attr>
+        <attr name="textSize" format="dimension"></attr>
+        <attr name="textColor" format="color"></attr>
+        <attr name="isTextDisplay" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar">
+        <!--尺寸值-->
+        <attr name="starImageSize" format="dimension" />
+        <!--星星间距-->
+        <attr name="starPadding" format="dimension" />
+        <!--星星总数-->
+        <attr name="starCount" format="integer" />
+        <!--空白的星星资源文件值-->
+        <attr name="starEmpty" format="reference" />
+        <!--满星资源文件值-->
+        <attr name="starFill" format="reference" />
+        <!--半星资源文件值-->
+        <attr name="starHalf" format="reference" />
+        <!--是否可点击boolean值-->
+        <attr name="clickable" format="boolean" />
+        <!--当前进度float值-->
+        <attr name="starStep" format="float" />
+        <!--每次进度方式的值，整星还是半星-->
+        <attr name="stepSize">
+            <enum name="Half" value="0" />
+            <enum name="Full" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@drawable/rating_small_empty" />
+    <item android:id="@android:id/progress" android:drawable="@drawable/rating_small_full" />
+</layer-list>
+<!-- layer-list: 叠加 不能改id @android:id/background @android:id/progress -->
+<!-- selector:状态选择  不同的状态显示图片 -->
+

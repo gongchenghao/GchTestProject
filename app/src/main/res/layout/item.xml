@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ebebeb"
+        android:textColor="#a8a8a8"
+        android:paddingLeft="10dip"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="A"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/item"
+        android:background="@drawable/item_click"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/touxiang"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="#191919"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:text="hhhh"/>
+    </LinearLayout>
+    <View
+        android:background="#eeeeee"
+        android:layout_marginLeft="@dimen/dp7"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"/>
+</LinearLayout>

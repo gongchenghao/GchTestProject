@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:id="@+id/item_date_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/item_date_day"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="2"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/item_date_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_date_day"
+                android:layout_centerHorizontal="true"
+                android:text="入住"
+                android:gravity="center"
+                android:textColor="#073290"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+<!--         <ImageView -->
+<!--             android:id="@+id/item_date_cancel" -->
+<!--             android:layout_width="15dp" -->
+<!--             android:layout_height="15dp" -->
+<!--             android:background="@drawable/date_cancel" /> -->
+
+        <!--<TextView-->
+            <!--android:id="@+id/item_date_today"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:text="今天"-->
+            <!--android:textColor="@color/head_blue"-->
+            <!--android:textSize="16sp"-->
+            <!--android:visibility="gone" />-->
+    </RelativeLayout>
+
+</RelativeLayout>

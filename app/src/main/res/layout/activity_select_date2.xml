@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="gcg.testproject.activity.selectdate2.SelectDate2Activity">
+    <TextView
+        android:background="#4caf65"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/tv_select_date"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="选择日期"/>
+    <TextView
+        android:layout_marginTop="@dimen/dp50"
+        android:background="#4caf65"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/tv_start_date"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="开始日期"/>
+    <TextView
+        android:layout_marginTop="@dimen/dp50"
+        android:background="#4caf65"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/tv_end_date"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="结束日期"/>
+</LinearLayout>
