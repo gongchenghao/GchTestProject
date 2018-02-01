@@ -19,8 +19,6 @@ import gcg.testproject.dialog.ProgressDialog;
 
 * @Create On 2018/1/25 11:31
 
-* @Site:http://www.handongkeji.com
-
 * @author:gongchenghao
 
 * @Copyrights 2018/1/25 宫成浩 All rights reserved.
