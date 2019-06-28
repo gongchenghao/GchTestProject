@@ -365,6 +365,16 @@
                 android:gravity="center"
                 android:text="仿华为手机充电"
                 android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/tv_yin_pin"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="#4caf65"
+                android:gravity="center"
+                android:text="音频进度条"
+                android:textColor="#ffffff"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

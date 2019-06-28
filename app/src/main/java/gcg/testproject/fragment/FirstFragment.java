@@ -15,6 +15,7 @@ import gcg.testproject.activity.ListViewDelete.ListViewDeleteActivity;
 import gcg.testproject.activity.RefreshAndLoadMore.RefreshAndLoadMoreActivity;
 import gcg.testproject.activity.RightTopPopWindow.RightTopPopActivity;
 import gcg.testproject.activity.SelectVideo.SelectVideoActivity;
+import gcg.testproject.activity.YinPinJinDuTiao.YinPinProgressDemoActivity;
 import gcg.testproject.activity.alipay.PayActivity;
 import gcg.testproject.activity.banner.BannerActivity;
 import gcg.testproject.activity.chongDianDongHua.ChongDianActivity;
@@ -109,6 +110,8 @@ public class FirstFragment extends BaseFragment implements View.OnClickListener 
     TextView tv_daili;
     @Bind(R.id.tv_chong_dian)
     TextView tv_chong_dian;
+    @Bind(R.id.tv_yin_pin)
+    TextView tv_yin_pin;
 
 
     public FirstFragment() {
@@ -156,6 +159,7 @@ public class FirstFragment extends BaseFragment implements View.OnClickListener 
         mTvPosui.setOnClickListener(this);
         tv_daili.setOnClickListener(this);
         tv_chong_dian.setOnClickListener(this);
+        tv_yin_pin.setOnClickListener(this);
     }
 
     @Override
@@ -258,6 +262,9 @@ public class FirstFragment extends BaseFragment implements View.OnClickListener 
                 break;
             case R.id.tv_chong_dian: //仿华为手机充电
                 MoveUtils.go(getActivity(), ChongDianActivity.class);
+                break;
+            case R.id.tv_yin_pin: //音频进度条
+                MoveUtils.go(getActivity(), YinPinProgressDemoActivity.class);
                 break;
         }
     }
