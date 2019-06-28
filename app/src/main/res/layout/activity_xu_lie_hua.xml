@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gcg.testproject.activity.xuliehua.XuLieHuaActivity">
+    <TextView
+        android:id="@+id/tv_tiao_zhuan"
+        android:padding="@dimen/dp15"
+        android:gravity="center"
+        android:background="#4caf65"
+        android:textSize="20sp"
+        android:text="通过Serializable序列化传递数据到第二个界面"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <TextView
+        android:layout_marginTop="@dimen/dp20"
+        android:id="@+id/tv_tiao_zhuan2"
+        android:padding="@dimen/dp15"
+        android:gravity="center"
+        android:background="#4caf65"
+        android:textSize="20sp"
+        android:text="通过Parcelable序列化传递数据到第二个界面"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+</LinearLayout>

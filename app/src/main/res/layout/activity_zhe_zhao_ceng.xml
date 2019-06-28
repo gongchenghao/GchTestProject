@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/dalu_beijingtu"
+    tools:context="gcg.testproject.activity.zhezhaoceng.ZheZhaoCengActivity">
+    <ImageView
+        android:background="@mipmap/dalu_ditu"
+        android:id="@+id/iv_ditu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <gcg.testproject.activity.zhezhaoceng.ZheZhaoCengView
+        android:id="@+id/zzc_view"
+        android:background="#8c565658"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/fl_scan"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp150">
+        </View>
+        <ImageView
+            android:id="@+id/iv_quan"
+            android:background="@drawable/rect_5_act"
+            android:layout_width="152dp"
+            android:layout_height="152dp"/>
+    </gcg.testproject.activity.zhezhaoceng.ZheZhaoCengView>
+</android.support.constraint.ConstraintLayout>
