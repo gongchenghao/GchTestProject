@@ -24,6 +24,7 @@ import gcg.testproject.R;
 import gcg.testproject.activity.MainActivity;
 import gcg.testproject.base.BaseActivity;
 import gcg.testproject.common.Word;
+import gcg.testproject.utils.LogUtils;
 
 public class SplashActivity extends BaseActivity implements View.OnClickListener{
 
@@ -51,9 +52,10 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
         switch (view.getId())
         {
             case R.id.tv_time: //点击了跳过后，直接进入MainActivity
+                LogUtils.i("点击了跳过");
+                timeCount.cancel(); //跳转后结束计时
                 Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
-                timeCount.cancel(); //跳转后结束计时
                 finish();
                 break;
         }
@@ -73,6 +75,7 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
 
         @Override
         public void onFinish() {
+            LogUtils.i("onFinish");
             goWhere(); //判断跳转到哪个界面
         }
     }
@@ -86,6 +89,8 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
      * aBoolean1：true_进入GuideActivity  false_进入MainActivity
      */
     private void goWhere() {
+        LogUtils.i("goWhere");
+        timeCount.cancel();
         boolean aBoolean = spUtils.getBoolean(Word.FIRST_LAUNCH); //如果不存在，则返回默认值：false
         if (aBoolean == false) {
             spUtils.put(Word.FIRST_LAUNCH,true); //当用户第一次打开时，设置为true

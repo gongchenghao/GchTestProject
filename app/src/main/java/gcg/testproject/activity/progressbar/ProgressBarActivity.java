@@ -6,6 +6,8 @@ import android.os.Message;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import gcg.testproject.R;
@@ -21,6 +23,8 @@ public class ProgressBarActivity extends BaseActivity {
     ProgressBar progressBar;
     @Bind(R.id.progress_bar1)
     ProgressBar progressBar2;
+    @Bind(R.id.line_view)
+    LineGraphicView2 line_view;
 
     private int roundProgress = 0;
     private int horizontalProgress = 0;
@@ -35,6 +39,12 @@ public class ProgressBarActivity extends BaseActivity {
         initRoundProgressBar(); //初始化圆形进度条
         initHorizontalProgressBar();//初始化水平进度条
         initHorizontalProgressBar1();//初始化水平进度条
+
+        setQuxianBar();
+    }
+
+    private void setQuxianBar() {
+        line_view.setProgress(88);
     }
 
 
@@ -47,6 +57,7 @@ public class ProgressBarActivity extends BaseActivity {
         progressBar.setMax(100);
         handler.sendEmptyMessage(1);
     }
+
     private void initHorizontalProgressBar1() {
         progressBar2.setMax(100);
         handler.sendEmptyMessage(2);

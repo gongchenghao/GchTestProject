@@ -90,6 +90,9 @@ public final class Constants {
     //接口的Base url
     public static final String URL_CONTEXTPATH = "http://app.newtonapple.cn/zhangyiyan/";
 
+    //银河英雄传说：图片服务器地址
+    public static final String URL_IMAGE = "http://www.hhhxin.com/";
+
 
 //    ==============================================================================================================
 

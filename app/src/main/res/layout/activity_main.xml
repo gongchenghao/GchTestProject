@@ -157,6 +157,7 @@
 
     <!-- 左侧滑动菜单 -->
     <RelativeLayout
+        android:clickable="true"
         android:background="#4caf65"
         android:id="@+id/main_left_drawer_layout"
         android:layout_width="240dp"
@@ -174,6 +175,7 @@
 
     <!-- 右侧滑动菜单 -->
     <RelativeLayout
+        android:clickable="true"
         android:gravity="center"
         android:background="#4caf65"
         android:id="@+id/main_right_drawer_layout"

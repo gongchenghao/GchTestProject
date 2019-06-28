@@ -17,16 +17,27 @@ import gcg.testproject.activity.RightTopPopWindow.RightTopPopActivity;
 import gcg.testproject.activity.SelectVideo.SelectVideoActivity;
 import gcg.testproject.activity.alipay.PayActivity;
 import gcg.testproject.activity.banner.BannerActivity;
+import gcg.testproject.activity.chongDianDongHua.ChongDianActivity;
 import gcg.testproject.activity.contactlist.ContactListActivity;
+import gcg.testproject.activity.dongTaiDaiLi.MyProxyActivity;
 import gcg.testproject.activity.erweima.ErWeiMaActivity;
 import gcg.testproject.activity.location.GetLocationActivity;
+import gcg.testproject.activity.notifycation.Notifycation2Activity;
+import gcg.testproject.activity.posui.PoSuiActivity;
 import gcg.testproject.activity.progressbar.ProgressBarActivity;
 import gcg.testproject.activity.ratingbar.RatingBarActivity;
 import gcg.testproject.activity.sanji.SanJiActivity;
 import gcg.testproject.activity.selectdate.SelectDateActivity;
 import gcg.testproject.activity.selectdate2.SelectDate2Activity;
+import gcg.testproject.activity.selectdate3.SelectDate3Activity;
 import gcg.testproject.activity.selectphoto.SelectPhotoActivity;
+import gcg.testproject.activity.shanxingmenu.ShanXingMenuActivity;
 import gcg.testproject.activity.update.UpdateActivity;
+import gcg.testproject.activity.xiaohongshu_login.XiaoHongShuLoginActivity;
+import gcg.testproject.activity.xuliehua.XuLieHuaActivity;
+import gcg.testproject.activity.yinhe_xingxi.XingXiActivity;
+import gcg.testproject.activity.yyz3.YyzDongHuaActivity;
+import gcg.testproject.activity.zhezhaoceng.ZheZhaoCengActivity;
 import gcg.testproject.base.BaseFragment;
 import gcg.testproject.dialog.MySimpleDialog;
 import gcg.testproject.utils.MoveUtils;
@@ -76,6 +87,28 @@ public class FirstFragment extends BaseFragment implements View.OnClickListener 
     TextView tv_relogin_dialog;
     @Bind(R.id.tv_location)
     TextView tv_location;
+    @Bind(R.id.tv_shanxing_menu)
+    TextView mTvShanxingMenu;
+    @Bind(R.id.tv_xingxi)
+    TextView mTvXingxi;
+    @Bind(R.id.tv_xiaohongshu)
+    TextView mTvXiaohongshu;
+    @Bind(R.id.tv_tongzhi)
+    TextView mTvTongzhi;
+    @Bind(R.id.tv_xuliehua)
+    TextView mTvXuliehua;
+    @Bind(R.id.tv_date3)
+    TextView mTvDate3;
+    @Bind(R.id.tv_yinyingzhuan)
+    TextView mTvYinyingzhuan;
+    @Bind(R.id.tv_zhezhaoceng)
+    TextView mTvZhezhaoceng;
+    @Bind(R.id.tv_posui)
+    TextView mTvPosui;
+    @Bind(R.id.tv_daili)
+    TextView tv_daili;
+    @Bind(R.id.tv_chong_dian)
+    TextView tv_chong_dian;
 
 
     public FirstFragment() {
@@ -112,7 +145,17 @@ public class FirstFragment extends BaseFragment implements View.OnClickListener 
         tv_list_count_down.setOnClickListener(this);
         tv_relogin_dialog.setOnClickListener(this);
         tv_location.setOnClickListener(this);
-
+        mTvShanxingMenu.setOnClickListener(this);
+        mTvXingxi.setOnClickListener(this);
+        mTvXiaohongshu.setOnClickListener(this);
+        mTvTongzhi.setOnClickListener(this);
+        mTvXuliehua.setOnClickListener(this);
+        mTvDate3.setOnClickListener(this);
+        mTvYinyingzhuan.setOnClickListener(this);
+        mTvZhezhaoceng.setOnClickListener(this);
+        mTvPosui.setOnClickListener(this);
+        tv_daili.setOnClickListener(this);
+        tv_chong_dian.setOnClickListener(this);
     }
 
     @Override
@@ -132,6 +175,9 @@ public class FirstFragment extends BaseFragment implements View.OnClickListener 
                 break;
             case R.id.tv_date2: //日期选择器2
                 MoveUtils.go(getActivity(), SelectDate2Activity.class);
+                break;
+            case R.id.tv_date3: //日期选择器3
+                MoveUtils.go(getActivity(), SelectDate3Activity.class);
                 break;
             case R.id.tv_contect: //联系人列表
                 MoveUtils.go(getActivity(), ContactListActivity.class);
@@ -183,10 +229,40 @@ public class FirstFragment extends BaseFragment implements View.OnClickListener 
             case R.id.tv_location: //定位
                 MoveUtils.go(getActivity(), GetLocationActivity.class);
                 break;
+            case R.id.tv_shanxing_menu: //扇形菜单
+                MoveUtils.go(getActivity(), ShanXingMenuActivity.class);
+                break;
+            case R.id.tv_xingxi: //星系图
+                MoveUtils.go(getActivity(), XingXiActivity.class);
+                break;
+            case R.id.tv_xiaohongshu: //仿小红书的视频背景登录页
+                MoveUtils.go(getActivity(), XiaoHongShuLoginActivity.class);
+                break;
+            case R.id.tv_tongzhi: //跳转到通知Activity
+                MoveUtils.go(getActivity(), Notifycation2Activity.class);
+                break;
+            case R.id.tv_xuliehua: //跳转到序列化界面
+                MoveUtils.go(getActivity(), XuLieHuaActivity.class);
+                break;
+            case R.id.tv_yinyingzhuan: //银英传3.0动画效果
+                MoveUtils.go(getActivity(), YyzDongHuaActivity.class);
+                break;
+            case R.id.tv_zhezhaoceng: //自定义遮罩层
+                MoveUtils.go(getActivity(), ZheZhaoCengActivity.class);
+                break;
+            case R.id.tv_posui: //破碎效果
+                MoveUtils.go(getActivity(), PoSuiActivity.class);
+                break;
+            case R.id.tv_daili: //动态代理
+                MoveUtils.go(getActivity(), MyProxyActivity.class);
+                break;
+            case R.id.tv_chong_dian: //仿华为手机充电
+                MoveUtils.go(getActivity(), ChongDianActivity.class);
+                break;
         }
     }
-    private void reLogin()
-    {
+
+    private void reLogin() {
         new SystemDialogUtils().showMissingPermissionDialog(
                 getActivity(),
                 "提示",
@@ -195,13 +271,19 @@ public class FirstFragment extends BaseFragment implements View.OnClickListener 
                 "取消", new SystemDialogUtils.AfterClick() {
                     @Override
                     public void confirm() {
-                        ToastUtils.showShort(getActivity(),"点击了重新登录");
+                        ToastUtils.showShort(getActivity(), "点击了重新登录");
                     }
 
                     @Override
                     public void cancle() {
-                        ToastUtils.showShort(getActivity(),"点击了取消");
+                        ToastUtils.showShort(getActivity(), "点击了取消");
                     }
                 });
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        ButterKnife.unbind(this);
     }
 }

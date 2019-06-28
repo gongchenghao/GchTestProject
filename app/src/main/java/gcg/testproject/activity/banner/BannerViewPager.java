@@ -14,12 +14,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.bumptech.glide.load.model.file_descriptor.FileDescriptorStringLoader;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import gcg.testproject.R;
+import gcg.testproject.utils.LogUtils;
 
 
 /**
@@ -136,6 +135,10 @@ public class BannerViewPager extends LinearLayout implements ViewPager.OnPageCha
      * @param showPosition 默认选中的位置
      */
     public void setData(List<ImageView> views, List<String> list, OnItemClickListener listener, int showPosition) {
+        LogUtils.i("=== BannerViewPager setData ===");
+        LogUtils.i("list.size():"+list.size());
+        LogUtils.i("views.size():"+views.size());
+
         this.onItemClickListener = listener;
         this.list = list;
         imageViews.clear();
@@ -145,6 +148,8 @@ public class BannerViewPager extends LinearLayout implements ViewPager.OnPageCha
         if (list.size() == 0) {
             fl_banner_viewpager.setVisibility(View.GONE);
             return;
+        }else {
+            fl_banner_viewpager.setVisibility(View.VISIBLE);
         }
         /**
          * 如果只有一个图片就不显示下边的指针了
@@ -152,27 +157,41 @@ public class BannerViewPager extends LinearLayout implements ViewPager.OnPageCha
         if (list.size() == 1) {
             setScrollable(false);
             isWheel = false;
+            LogUtils.i("list.size() == 1,隐藏指示器");
             ll_scroll_banner_indicator.setVisibility(View.GONE);
             this.imageViews.add(views.get(0));
         }else{
+            ll_scroll_banner_indicator.setVisibility(View.VISIBLE);
+            LogUtils.i("imageViews添加数据");
+            LogUtils.i("views:"+views.size());
             //添加数据
             for (ImageView item : views) {
                 this.imageViews.add(item);
             }
         }
+        LogUtils.i("imageViews.size:"+imageViews.size());
 
         //设置指示器
         int ivSize = views.size();
+        LogUtils.i("ivSize:"+ivSize);
         indicators = new ImageView[ivSize];
+        LogUtils.i("indicators.length:"+indicators.length);
+
         //如果是需要循环的话就重新设置指示器
         if (isLoop)
             indicators = new ImageView[ivSize - 2];
+        LogUtils.i("清空指示器");
         ll_scroll_banner_indicator.removeAllViews();
+
         for (int i = 0; i < indicators.length; i++) {
             View view = View.inflate(getContext(), R.layout.view_banner_viewpager_indicator, null);
             indicators[i] = (ImageView) view.findViewById(R.id.iv_baner_indicator);
+            LogUtils.i("添加指示器："+i);
             ll_scroll_banner_indicator.addView(view);
         }
+        LogUtils.i("ll_scroll_banner_indicator.getChildCount:"+ll_scroll_banner_indicator.getChildCount());
+
+        LogUtils.i("imageViews.size:"+imageViews.size());
         viewPagerAdapter = new ViewPagerAdapter();
         // 默认指向第一项，下方viewPager.setCurrentItem将触发重新计算指示器指向
         setIndicator(0);
@@ -196,10 +215,10 @@ public class BannerViewPager extends LinearLayout implements ViewPager.OnPageCha
      */
     private void setIndicator(int selectedPosition) {
         for (int i = 0; i < indicators.length; i++) {
-            indicators[i].setBackgroundResource(R.mipmap.icon_point);
+            indicators[i].setBackgroundResource(R.mipmap.indicator1);
         }
         if (indicators.length > selectedPosition)
-            indicators[selectedPosition].setBackgroundResource(R.mipmap.icon_point_pre);
+            indicators[selectedPosition].setBackgroundResource(R.mipmap.indicator2);
     }
 
     /**

@@ -19,6 +19,7 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
+import gcg.testproject.common.MyApp;
 import gcg.testproject.utils.LogUtils;
 import gcg.testproject.utils.ToastUtils;
 
@@ -86,7 +87,8 @@ public class LocationService extends Service {
      * 停止定位
      * @since 2.8.0
      */
-    private void stopLocation() {
+    public void stopLocation() {
+        LogUtils.i("stopLocation——停止定位");
         // 停止定位
         locationClient.stopLocation();
     }
@@ -95,7 +97,7 @@ public class LocationService extends Service {
      * 销毁定位
      * @since 2.8.0
      */
-    private void destroyLocation() {
+    public void destroyLocation() {
         if (null != locationClient) {
             /**
              * 如果AMapLocationClient是在当前Activity实例化的，
@@ -105,6 +107,12 @@ public class LocationService extends Service {
             locationClient = null;
             locationOption = null;
         }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        destroyLocation();
     }
 
 
@@ -163,8 +171,10 @@ public class LocationService extends Service {
                         +location.getAccuracy() + "米");
 
                 LogUtils.i("定位结果："+result);
+                ToastUtils.showShort(MyApp.getInstance().getBaseContext(),"定位结果："+result);
             } else {
                 LogUtils.i("定位失败");
+                ToastUtils.showShort(MyApp.getInstance().getBaseContext(),"定位失败");
             }
         }
     };

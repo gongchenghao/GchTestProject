@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="gcg.testproject">
+<manifest package="gcg.testproject"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
+    <!-- MD5值（debug版） -->
+    <!-- 68:D1:60:23:D0:A4:DC:FA:F3:C8:AA:B7:99:5C:ED:59 -->
+    <!-- sha1值（debug版） -->
+    <!-- E7:EF:30:D2:DE:C5:F2:1B:EE:2A:19:AB:56:C3:25:96:84:68:C1:FB -->
+    <!-- sha256值（debug版） -->
+    <!-- 07:10:06:B7:CC:C9:79:F6:B8:74:8C:79:AC:12:17:DA:BB:DF:BD:1F:6C:B8:D4:26:39:76:ED:66:61:B4:46:1C -->
+    <!-- MD5值（release版） -->
+    <!-- 93:2F:35:72:78:D4:8E:E9:3B:25:63:A6:75:2E:6B:27 -->
+    <!-- sha1值（release版） -->
+    <!-- 8C:EF:32:ED:C4:1C:34:F8:A8:AF:D0:47:96:C4:1F:F4:FA:9C:D7:12 -->
+    <!-- sha256值（release版） -->
+    <!-- C2:62:FC:EC:78:A1:5E:BD:5A:04:40:1A:6B:BD:A6:7A:88:C2:D4:F4:F4:C0:AA:D8:B0:A8:52:CC:29:DD:8B:52 -->
     <application
         android:name=".common.MyApp"
         android:allowBackup="true"
@@ -23,65 +35,79 @@
         android:theme="@style/MyTheme">
         <activity android:name=".activity.SplashAndGuide.SplashActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".activity.MainActivity"
-            android:launchMode="singleTask" />
-        <activity android:name=".activity.selectphoto.SelectPhotoActivity" />
-        <activity android:name="com.donkingliang.imageselector.ImageSelectorActivity" />
-        <activity android:name="com.donkingliang.imageselector.PreviewActivity" />
-        <activity android:name=".activity.selectphoto.DaTuActivity" />
-        <activity android:name=".activity.SelectVideo.SelectVideoActivity" />
-        <activity android:name=".activity.SelectVideo.VideoPlayActivity" />
-        <activity android:name=".activity.SelectVideo.VideoSelectActivity" />
-        <activity android:name=".activity.banner.BannerActivity" />
-        <activity android:name=".activity.selectdate.SelectDateActivity" />
-        <activity android:name=".activity.selectdate2.SelectDate2Activity" />
-        <activity android:name=".activity.selectdate2.date.DateActivity" />
-        <activity android:name=".activity.contactlist.ContactListActivity" />
-        <activity android:name=".activity.RightTopPopWindow.RightTopPopActivity" />
-        <activity android:name=".activity.SplashAndGuide.GuideActivity" />
-        <activity android:name=".activity.progressbar.ProgressBarActivity" />
-        <activity android:name=".activity.ratingbar.RatingBarActivity" />
-        <activity android:name=".activity.update.UpdateActivity" />
-        <activity android:name=".activity.sanji.SanJiActivity" />
-        <activity android:name=".activity.erweima.ErWeiMaActivity" />
-        <activity android:name=".activity.erweima.zxing.CaptureActivity" />
-        <activity android:name=".activity.alipay.PayActivity" />
+            android:launchMode="singleTask"/>
+        <activity android:name=".activity.selectphoto.SelectPhotoActivity"/>
+        <activity android:name="com.donkingliang.imageselector.ImageSelectorActivity"/>
+        <activity android:name="com.donkingliang.imageselector.PreviewActivity"/>
+        <activity android:name=".activity.selectphoto.DaTuActivity"/>
+        <activity android:name=".activity.SelectVideo.SelectVideoActivity"/>
+        <activity android:name=".activity.SelectVideo.VideoPlayActivity"/>
+        <activity android:name=".activity.SelectVideo.VideoSelectActivity"/>
+        <activity android:name=".activity.banner.BannerActivity"/>
+        <activity android:name=".activity.selectdate.SelectDateActivity"/>
+        <activity android:name=".activity.selectdate2.SelectDate2Activity"/>
+        <activity android:name=".activity.selectdate2.date.DateActivity"/>
+        <activity android:name=".activity.contactlist.ContactListActivity"/>
+        <activity android:name=".activity.RightTopPopWindow.RightTopPopActivity"/>
+        <activity android:name=".activity.SplashAndGuide.GuideActivity"/>
+        <activity android:name=".activity.progressbar.ProgressBarActivity"/>
+        <activity android:name=".activity.ratingbar.RatingBarActivity"/>
+        <activity android:name=".activity.update.UpdateActivity"/>
+        <activity android:name=".activity.sanji.SanJiActivity"/>
+        <activity android:name=".activity.erweima.ErWeiMaActivity"/>
+        <activity android:name=".activity.erweima.zxing.CaptureActivity"/>
+        <activity android:name=".activity.alipay.PayActivity"/>
         <activity
             android:name=".wxapi.WXPayEntryActivity"
             android:exported="true"
-            android:launchMode="singleTop" />
-        <activity android:name=".activity.RefreshAndLoadMore.RefreshAndLoadMoreActivity" />
-        <activity android:name=".activity.ListViewDelete.ListViewDeleteActivity" />
-        <activity android:name=".activity.ListViewDelete.ListViewDelete2Activity" />
-        <activity android:name=".activity.ListCountDown.ListCountDownActivity" />
-        <activity android:name=".activity.location.GetLocationActivity"></activity>
+            android:launchMode="singleTop"/>
+        <activity android:name=".activity.RefreshAndLoadMore.RefreshAndLoadMoreActivity"/>
+        <activity android:name=".activity.ListViewDelete.ListViewDeleteActivity"/>
+        <activity android:name=".activity.ListViewDelete.ListViewDelete2Activity"/>
+        <activity android:name=".activity.ListCountDown.ListCountDownActivity"/>
+        <activity android:name=".activity.location.GetLocationActivity"/>
 
-
-        <!--高德定位（这个项目的定位功能用的是debug的签名文件）-->
+        <!-- 高德定位（这个项目的定位功能用的是debug的签名文件） -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="a0a13c7820c568fb8117beb73a0fe959" />
-        <service android:name="com.amap.api.location.APSService" />
-        <service android:name=".service.LocationService" />
+            android:value="a0a13c7820c568fb8117beb73a0fe959"/>
 
+        <service android:name="com.amap.api.location.APSService"/>
+        <service android:name=".service.LocationService"/>
+
+        <activity android:name=".activity.shanxingmenu.ShanXingMenuActivity">
+        </activity>
+        <activity android:name=".activity.yinhe_xingxi.XingXiActivity">
+        </activity>
+        <activity android:name=".activity.xiaohongshu_login.XiaoHongShuLoginActivity">
+        </activity>
+        <activity android:name=".activity.notifycation.NotifycationActivity">
+        </activity>
+        <activity android:name=".activity.notifycation.Notifycation2Activity">
+        </activity>
+        <activity android:name=".activity.xuliehua.XuLieHuaActivity">
+        </activity>
+        <activity android:name=".activity.xuliehua.XuLieHua2Activity">
+        </activity>
+        <activity android:name=".activity.selectdate3.SelectDate3Activity">
+        </activity>
+        <activity android:name=".activity.yyz3.YyzDongHuaActivity">
+        </activity>
+        <activity android:name=".activity.zhezhaoceng.ZheZhaoCengActivity">
+        </activity>
+        <activity android:name=".activity.posui.PoSuiActivity">
+        </activity>
+        <activity android:name=".activity.dongTaiDaiLi.MyProxyActivity">
+        </activity>
+        <activity android:name=".activity.chongDianDongHua.ChongDianActivity">
+        </activity>
     </application>
-    <!--MD5值（debug版）-->
-    <!--68:D1:60:23:D0:A4:DC:FA:F3:C8:AA:B7:99:5C:ED:59-->
-    <!--sha1值（debug版）-->
-    <!--E7:EF:30:D2:DE:C5:F2:1B:EE:2A:19:AB:56:C3:25:96:84:68:C1:FB-->
-    <!--sha256值（debug版）-->
-    <!--07:10:06:B7:CC:C9:79:F6:B8:74:8C:79:AC:12:17:DA:BB:DF:BD:1F:6C:B8:D4:26:39:76:ED:66:61:B4:46:1C-->
 
-    <!--MD5值（release版）-->
-    <!--93:2F:35:72:78:D4:8E:E9:3B:25:63:A6:75:2E:6B:27-->
-    <!--sha1值（release版）-->
-    <!--8C:EF:32:ED:C4:1C:34:F8:A8:AF:D0:47:96:C4:1F:F4:FA:9C:D7:12-->
-    <!--sha256值（release版）-->
-    <!--C2:62:FC:EC:78:A1:5E:BD:5A:04:40:1A:6B:BD:A6:7A:88:C2:D4:F4:F4:C0:AA:D8:B0:A8:52:CC:29:DD:8B:52-->
 </manifest>

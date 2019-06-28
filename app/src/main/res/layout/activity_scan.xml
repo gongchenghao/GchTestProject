@@ -48,22 +48,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
+
         <SurfaceView
             android:id="@+id/capture_preview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
 
         <RelativeLayout
             android:id="@+id/capture_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/capture_mask_top"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_alignParentTop="true"
-                android:background="@drawable/shadow" />
+                android:background="@drawable/shadow"/>
 
             <RelativeLayout
                 android:id="@+id/capture_crop_view"
@@ -71,14 +72,14 @@
                 android:layout_height="200dp"
                 android:layout_below="@id/capture_mask_top"
                 android:layout_centerHorizontal="true"
-                android:background="@drawable/qr_code_bg" >
+                android:background="@drawable/qr_code_bg">
 
                 <ImageView
                     android:id="@+id/capture_scan_line"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/scan_line" />
+                    android:src="@drawable/scan_line"/>
             </RelativeLayout>
 
             <ImageView
@@ -87,18 +88,18 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_below="@id/capture_crop_view"
-                android:background="@drawable/shadow" />
+                android:background="@drawable/shadow"/>
+
             <TextView
-                android:textColor="#ffffff"
-                android:gravity="center"
-                android:layout_marginTop="20dp"
-                android:text="点击此处打开闪光灯"
-                android:layout_centerHorizontal="true"
                 android:id="@+id/tv_shanguang"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:layout_below="@id/capture_crop_view"
-                 />
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="点击此处打开闪光灯"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/capture_crop_view"
+                android:layout_toEndOf="@+id/capture_mask_left"/>
 
             <ImageView
                 android:id="@+id/capture_mask_left"
@@ -108,7 +109,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@id/capture_mask_top"
                 android:layout_toStartOf="@id/capture_crop_view"
-                android:background="@drawable/shadow" />
+                android:background="@drawable/shadow"/>
 
             <ImageView
                 android:id="@+id/capture_mask_right"
@@ -118,8 +119,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_below="@id/capture_mask_top"
                 android:layout_toEndOf="@id/capture_crop_view"
-                android:background="@drawable/shadow" />
-            
+                android:background="@drawable/shadow"/>
+
         </RelativeLayout>
 
     </FrameLayout>

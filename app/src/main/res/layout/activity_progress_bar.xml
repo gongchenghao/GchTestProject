@@ -54,4 +54,9 @@
         android:progressDrawable="@drawable/progressbg1"
         style="@android:style/Widget.ProgressBar.Horizontal"
         />
+    <gcg.testproject.activity.progressbar.LineGraphicView2
+        android:layout_marginTop="@dimen/dp20"
+        android:id="@+id/line_view"
+        android:layout_width="300dp"
+        android:layout_height="100dp"/>
 </LinearLayout>

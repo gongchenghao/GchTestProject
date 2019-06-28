@@ -93,6 +93,7 @@ public class RefreshAndLoadMoreActivity extends BaseActivity {
         swipe_layout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
+		isLoading = false;
                 swipe_layout.removeNoMoreFootView(); //================== 注意：必须调用
                 currentpage = 1;
                 getDataFromServer();

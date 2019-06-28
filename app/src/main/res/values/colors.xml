@@ -17,4 +17,14 @@
     <color name="normal" >#eae8e8</color>
     <color name="press" >#bcb2b2</color>
     <color name="theme_blue">#008df9</color>
+
+    <color name="timetimepicker_default_text_color">#999999</color>
+    <color name="timepicker_toolbar_bg">#e60012</color>
+    <color name="timepicker_dialog_bg">#80000000</color>
+    <color name="timepicker_line">#e8e8e8</color>
+
+    <color name="color_ff4631">#ff4631</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_4caf65">#4caf65</color>
 </resources>

@@ -38,4 +38,12 @@ public class Word {
 
     public static final String  ASK_FAILED = "网络不给力，请重试！";
 
+    public static float FIRST_SCROLLX = 0;//星系移动到中心点时的getScrollX()的值，在xingxifragment中赋值
+
+    public static float FIRST_SCROLLY = 0;//星系移动到中心点时的getScrollY()的值，在xingxifragment中赋值
+
+    public static int XING_XI_DP = 3800;//xml中设置的星系的dp值
+
+    public static int XING_XI_PX = 5800;//给的星系图的px大小
+
 }
